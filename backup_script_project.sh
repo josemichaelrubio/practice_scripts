@@ -1,7 +1,7 @@
 #!/opt/homebrew/bin/bash
 
 # Author: JMR
-# Date Created: 20230413
+# Date Created: 20230413 bra
 # Last Modified: 20230426
 
 # Description
@@ -17,7 +17,7 @@ echo "Please wait, you will recieve a message when it's complete."
 
 
 #tar -cvf ~/programs/bash-course/my_backup_"$(date +%d-m%-%Y_%H-%M-%S)".tar ~/* 2>/dev/null
-#tar -cvf backup"$(date +%d-m%-%Y_%H-%M-%S)".tar ${currentdir}
+tar -cvf backup"$(date +%d-m%-%Y_%H-%M-%S)".tar ~/* 2>/dev/null
 echo "Backup complete."
 echo "Thank you!"
 
