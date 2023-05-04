@@ -2,7 +2,7 @@
 
 # Author: Jose Michael Rubio
 # Date Created: 5/3/2023
-# Last Modified: 5/3/2023
+# Last Modified: 5/4/2023
 
 # Description:
 # positional parameters study sesh
@@ -14,3 +14,5 @@ echo "My name is $1"
 echo "My home directory is $2"
 echo "My favourite colour is $3"
 echo "The 10th arguement is ${10}"
+
+echo $#
