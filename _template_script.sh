@@ -9,3 +9,9 @@
 
 # Usage:
 # .sh
+
+
+
+
+
+## REMEMBER to give permissions to script then delete this comment ##
