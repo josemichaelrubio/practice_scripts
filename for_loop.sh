@@ -5,7 +5,7 @@
 # Last Modified: 5/6/2023
 
 # Description:
-# Studying iterating arrays with for loops
+# Studying iterating a simple list with for loops
 
 # Usage:
 # for_loop.sh
