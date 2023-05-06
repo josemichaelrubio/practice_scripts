@@ -13,9 +13,22 @@
 readarray -t headers < urls.txt
 
 
-for header in "{$headers[@]}"; do
-    h=$(curl --head "$PWD/urls.txt")
-    touch "$PWD/headers/$header"
+for header in "${headers[@]}"; do
+    if [ -f "$PWD/headers/$header" ]; then
+        echo "$header already exists"
+    else
+        #touch "$PWD/headers/$header"
+       #echo $(curl --head $header) > "$PWD/headers/$header"
+        echo $(curl --head $header)
+    fi
+    
+    
+    
+    
+    
+    #h=$(curl --head "$PWD/urls.txt")
+    #touch "$PWD/headers/$header"
+    #echo "$h" > "$PWD/headers/$header"
 
-    echo "$header was create"
+   #echo "$header was create"
 done
