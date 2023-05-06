@@ -12,5 +12,5 @@
 
 while read folder; do
     mkdir "$PWD/read-while_loops_project/$folder"
-    echo "$folder created"
+    echo "$folder created in $PWD/read-while_loops_project"
 done < "$1"
