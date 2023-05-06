@@ -1,0 +1,8 @@
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.18.0
+Date: Sat, 06 May 2023 23:50:37 GMT
+Content-Type: text/html
+Content-Length: 169
+Connection: keep-alive
+Location: https://www.wikipedia.com/
+

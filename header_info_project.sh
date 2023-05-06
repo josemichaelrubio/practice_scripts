@@ -10,25 +10,9 @@
 # Usage:
 # header_info_project.sh
 
-readarray -t headers < urls.txt
+readarray -t urls < urls.txt
 
-
-for header in "${headers[@]}"; do
-    if [ -f "$PWD/headers/$header" ]; then
-        echo "$header already exists"
-    else
-        #touch "$PWD/headers/$header"
-       #echo $(curl --head $header) > "$PWD/headers/$header"
-        echo $(curl --head $header)
-    fi
-    
-    
-    
-    
-    
-    #h=$(curl --head "$PWD/urls.txt")
-    #touch "$PWD/headers/$header"
-    #echo "$h" > "$PWD/headers/$header"
-
-   #echo "$header was create"
+for url in "${urls[@]}"; do
+    webname=$(echo $url | cut -d "." -f 2)
+    curl --head "$url" > "headers/$webname".txt
 done
