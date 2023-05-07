@@ -23,7 +23,6 @@ do
         "folder_organizer.sh") folder_organizer.sh ;;
         *) echo "You did not select a ultility to run" ;;
     esac
-
 break
 done
 
